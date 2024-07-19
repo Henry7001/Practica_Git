@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Nombres</title>
+</head>
+<body>
+    <h1>Lista de Nombres</h1>
+    <ul id="nombre-lista"></ul>
+
+    <script>
+        // Array de nombres
+        var nombres = ["Henry", "Josthin", "Jair", "Milton", "Emely"];
+
+        // Obtener el elemento de la lista
+        var lista = document.getElementById("nombre-lista");
+
+        // Recorrer el array de nombres y crear elementos de lista
+        for (var i = 0; i < nombres.length; i++) {
+            var nombre = nombres[i];
+
+            // Crear elemento de lista
+            var li = document.createElement("li");
+            li.textContent = nombre;
+
+            // Agregar el elemento de lista a la lista
+            lista.appendChild(li);
+        }
+    </script>
+</body>
+</html>
